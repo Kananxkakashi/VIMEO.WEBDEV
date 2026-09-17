@@ -1,0 +1,321 @@
+/* ==========================
+   VIMEO - MODERN STYLESHEET
+   ========================== */
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+/* BODY */
+body{
+    font-family:'Poppins',sans-serif;
+    background:#F5F5F5;
+    color:#111111;
+    line-height:1.7;
+}
+/* MAIN CONTAINER */
+main{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+}
+/* HEADER */
+header{
+    background:#FFFFFF;
+    text-align:center;
+    padding:30px 20px;
+    border-bottom:1px solid #E5E5E5;
+}
+header h1{
+    font-size:3rem;
+    font-weight:700;
+    letter-spacing:-1px;
+    color:#111111;
+}
+header p{
+    color:#666666;
+    text-transform:uppercase;
+    letter-spacing:4px;
+    font-size:0.85rem;
+    margin-top:5px;
+}
+/* NAVIGATION */
+nav{
+    background:#111111;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+nav li{
+    margin:0;
+}
+nav a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:18px 25px;
+    font-weight:500;
+    transition:0.3s;
+}
+nav a:hover{
+    background:#222222;
+}
+/* HERO SECTION */
+.hero{
+    min-height:75vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:
+    linear-gradient(
+    rgba(0,0,0,0.55),
+    rgba(0,0,0,0.55)
+    ),
+    url("../images/image1.jpg");
+    background-size:cover;
+    background-position:center;
+    border-radius:20px;
+    color:white;
+    margin-bottom:35px;
+}
+.hero-content{
+    max-width:850px;
+    padding:40px;
+}
+.hero h2{
+    font-size:4.5rem;
+    line-height:1.1;
+    margin-bottom:20px;
+    color:white;
+}
+.hero p{
+    color:#EAEAEA;
+    font-size:1.15rem;
+    margin-bottom:30px;
+}
+/* BUTTONS */
+.button,
+button{
+    display:inline-block;
+    background:#111111;
+    color:white;
+    text-decoration:none;
+    padding:14px 30px;
+    border-radius:999px;
+    border:none;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+.button:hover,
+button:hover{
+    background:#2D2D2D;
+    transform:translateY(-2px);
+}
+/* GENERAL SECTIONS */
+section{
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    border:1px solid #E5E5E5;
+    margin-bottom:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+section h2{
+    font-size:2rem;
+    margin-bottom:20px;
+}
+/* CATEGORY GRID */
+.categories{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+/* CARDS */
+.card{
+    background:white;
+    border:1px solid #E5E5E5;
+    border-radius:18px;
+    overflow:hidden;
+    transition:0.3s;
+}
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.08);
+}
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    transition:0.4s;
+}
+.card:hover img{
+    transform:scale(1.05);
+}
+.card h3{
+    padding:20px 20px 10px;
+    font-size:1.25rem;
+}
+.card p{
+    padding:0 20px 20px;
+    color:#666666;
+}
+/* DIFFICULTY BADGES */
+.difficulty{
+    display:inline-block;
+    margin:0 20px 20px;
+    padding:8px 15px;
+    background:#111111;
+    color:white !important;
+    border-radius:999px;
+    font-size:0.85rem;
+    font-weight:600;
+}
+/* FEATURED TUTORIAL */
+.featured-tutorial{
+    height:500px;
+    background:
+    linear-gradient(
+    rgba(0,0,0,0.55),
+    rgba(0,0,0,0.55)
+    ),
+    url("../images/robotic-arm.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    border-radius:20px;
+}
+.featured-content{
+    padding:60px;
+    color:white;
+}
+.featured-content h2{
+    color:white;
+}
+.featured-content h3{
+    font-size:3rem;
+    margin:15px 0;
+}
+.featured-content p{
+    color:#EAEAEA;
+    max-width:600px;
+}
+/* GALLERY */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+.gallery img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:0.3s;
+}
+.gallery img:hover{
+    transform:scale(1.03);
+}
+/* FORMS */
+form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+label{
+    font-weight:600;
+}
+input,
+textarea,
+select{
+    padding:14px;
+    border:1px solid #DADADA;
+    border-radius:10px;
+    font-family:'Poppins',sans-serif;
+    font-size:1rem;
+}
+input:focus,
+textarea:focus,
+select:focus{
+    outline:none;
+    border-color:#111111;
+}
+/* ARTICLES */
+article{
+    border:1px solid #E5E5E5;
+    border-radius:16px;
+    padding:25px;
+    margin-top:15px;
+}
+/* TABLES */
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+th,
+td{
+    padding:15px;
+    border:1px solid #E5E5E5;
+}
+th{
+    background:#111111;
+    color:white;
+}
+/* LISTS */
+ul,
+ol{
+    margin-left:25px;
+}
+li{
+    margin-bottom:10px;
+}
+/* IMAGES */
+img{
+    max-width:100%;
+    display:block;
+}
+/* FOOTER */
+footer{
+    background:#111111;
+    color:white;
+    text-align:center;
+    padding:35px 20px;
+    margin-top:40px;
+}
+footer p{
+    color:#D0D0D0;
+}
+/* RESPONSIVE */
+@media(max-width:768px){
+    header h1{
+        font-size:2.2rem;
+    }
+    .hero h2{
+        font-size:2.8rem;
+    }
+    .featured-content h3{
+        font-size:2rem;
+    }
+    nav ul{
+        flex-direction:column;
+    }
+    nav a{
+        text-align:center;
+        border-bottom:1px solid #222222;
+    }
+    section{
+        padding:25px;
+    }
+    .featured-content{
+        padding:30px;
+    }
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Tutorial | VIMEO</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <h1>VIMEO</h1>
+    <p>Cum aliis progredi</p>
+</header>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="tutorials.html">Tutorials</a></li>
+        <li><a href="upload.html">Upload Tutorial</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+<main>
+    <section class="hero">
+        <h2>Share Your Knowledge</h2>
+        <p>
+            Help other students learn by uploading your practical tutorials,
+            project guides, experiments, and educational demonstrations.
+        </p>
+    </section>
+    <section>
+        <h2>Upload a Tutorial</h2>
+        <form action="#" method="post">
+            <label for="studentName">Student Name</label>
+            <input
+                type="text"
+                id="studentName"
+                name="studentName"
+                placeholder="Enter your full name"
+                required>
+            <label for="institution">Institution</label>
+            <input
+                type="text"
+                id="institution"
+                name="institution"
+                placeholder="School, College or University"
+                required>
+            <label for="email">Email Address</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email address"
+                required>
+            <label for="title">Tutorial Title</label>
+            <input
+                type="text"
+                id="title"
+                name="title"
+                placeholder="Enter tutorial title"
+                required>
+            <label for="category">Category</label>
+            <select id="category" name="category" required>
+                <option value="">Select a Category</option>
+                <option>Chemistry</option>
+                <option>Information Technology</option>
+                <option>Engineering</option>
+                <option>Science</option>
+                <option>Robotics</option>
+            </select>
+            <label for="difficulty">Difficulty Level</label>
+            <select id="difficulty" name="difficulty" required>
+                <option value="">Select Difficulty</option>
+                <option>Beginner</option>
+                <option>Intermediate</option>
+                <option>Advanced</option>
+            </select>
+            <label for="description">Tutorial Description</label>
+            <textarea
+                id="description"
+                name="description"
+                rows="6"
+                placeholder="Describe your tutorial and explain what students will learn..."
+                required></textarea>
+            <label for="materials">Materials or Software Required</label>
+            <textarea
+                id="materials"
+                name="materials"
+                rows="4"
+                placeholder="List any equipment, chemicals, tools, software or resources needed..."></textarea>
+            <label for="steps">Summary of Tutorial Steps</label>
+            <textarea
+                id="steps"
+                name="steps"
+                rows="6"
+                placeholder="Provide a brief outline of the tutorial process..."
+                required></textarea>
+            <label for="fileUpload">Upload Supporting File</label>
+            <input
+                type="file"
+                id="fileUpload"
+                name="fileUpload">
+            <button type="submit">Submit Tutorial</button>
+        </form>
+    </section>
+    <section>
+        <h2>Submission Guidelines</h2>
+        <div class="categories">
+            <div class="card">
+                <h3>Educational Content</h3>
+                <p>
+                    Tutorials must focus on academic, scientific,
+                    engineering, or technical learning.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Clear Instructions</h3>
+                <p>
+                    Provide accurate step-by-step explanations that
+                    other students can easily follow.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Safety First</h3>
+                <p>
+                    Include appropriate safety precautions when
+                    demonstrating experiments or practical activities.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Original Work</h3>
+                <p>
+                    Submit tutorials that you created or have permission
+                    to share with the student community.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>Accepted Tutorial Categories</h2>
+        <ul>
+            <li>Chemistry Experiments and Solution Preparation</li>
+            <li>Programming and Software Development Projects</li>
+            <li>Database Design and Management Systems</li>
+            <li>Engineering and Electronics Projects</li>
+            <li>Science Investigations and Research Activities</li>
+            <li>Robotics and STEM Demonstrations</li>
+        </ul>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2026 VIMEO. All Rights Reserved.</p>
+</footer>
+</body>
+</html>
