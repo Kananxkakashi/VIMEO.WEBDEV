@@ -80,9 +80,18 @@ Tracking changes, fixes, and improvements to the website:
 ---
 
 ## 📚 References
-*Cite all academic sources, design inspiration, external code snippets, or frameworks using your institution's required referencing style (e.g., IIE Harvard Anglia).*
+References
 
-1. Author Surname, Initial. (Year). *Title of program/source code*. URL/Publisher.
-2. Framework/Library Name. (Year). *Documentation Title*. URL.
+Google. (n.d.). Poppins. Google Fonts. https://fonts.google.com/specimen/Poppins
+
+Vimeo. (n.d.). Vimeo. https://vimeo.com
+
+Caulfield, J. (2024). How to cite a website in APA style. Scribbr. https://www.scribbr.com/apa-examples/website/ (Scribbr)
+
+Curtin University Library. (n.d.). Websites – APA 7th referencing. Curtin University. https://uniskills.library.curtin.edu.au/referencing/apa7/websites/ (UniSkills)
+
+Deakin University. (2024). Web and video: APA 7. Deakin University. https://www.deakin.edu.au/students/study-support/study-resources/referencing/apa7/web-and-video (Deakin University)
+
+Griffith University. (n.d.). APA 7: Video stream – YouTube or Vimeo. Griffith University Library. https://www.griffith.edu.au/library/study/referencing/apa-7 (Griffith University)
 
 
