@@ -14,29 +14,29 @@
 ---
 
 ## 🔍 Project Overview
-Provide a complete, comprehensive summary of the project here. Explain what the website is, who it is for, and the specific problem or real-world need it addresses. Ensure this section is fully fleshed out for this submission.
+VIMEO is built to help students improve on certain skills pertaining to their studies or even adjacent skills learning from other students as to be better communicate and understand each other and the sight is completely free 
 
 ---
 
 ## 🎯 Website Goals and Objectives
-* **Primary Goal**: The ultimate purpose of the website (e.g., to provide a seamless e-commerce platform for local artists).
-* **Objective 1**: Measurable target 1 (e.g., Deliver a responsive user interface that loads in under 2 seconds).
-* **Objective 2**: Measurable target 2 (e.g., Implement secure user authentication and profile management).
-* **Objective 3**: Measurable target 3 (e.g., Ensure AAA web accessibility compliance for all core pages).
+* **Primary Goal**: The ultimate purpose of the website (e.g., to provide a seamless educational learning platform for students).
+* **Objective 1**: Measurable target 1 (Deliver a responsive user interface that loads in under 2 seconds).
+* **Objective 2**: Measurable target 2 (Deliver quality free videos that solely focus on the topics with no ads).
+* **Objective 3**: Measurable target 3 Giving a platform for students to prepare exams and tasks).
 
 ---
 
 ## ✨ Key Features and Functionality
-* **Feature 1**: [Name] - Short description of what it does and how it helps the user.
-* **Feature 2**: [Name] - Short description of what it does and how it helps the user.
-* **Feature 3**: [Name] - Short description of what it does and how it helps the user.
+* **Feature 1**: [Upload] -Uploading a tutorial of your own to help other students or issues you excel at.
+* **Feature 2**: [Search] - Being able to search for specific tutorials instaed of sifting through them all.
+* **Feature 3**: [Learning] - A vast number of videos is available on the website to learn from.
 
 ---
 
 ## 📅 Timeline and Milestones
-- [x] **Milestone 1: Project Initiation & Planning** — Completed [Date]
-- [x] **Milestone 2: Part 1 Submission** — Completed [Date]
-- [ ] **Milestone 3: Part 2 Development** — Planned for [Date]
+- [x] **Milestone 1: Project Initiation & Planning** — Completed [12 August 2026]
+- [x] **Milestone 2: Part 1 Submission** — Completed [14 August 20206]
+- [ ] **Milestone 3: Part 2 Development** — Planned for [18 September 2026]
 - [ ] **Milestone 4: Part 3 Final Testing & Deployment** — Planned for [Date]
 
 ---
@@ -75,7 +75,7 @@ Tracking changes, fixes, and improvements to the website:
 * Comprehensive `README.md` file covering Part 1 requirements.
 
 #### Fixed
-* Broken navigation links in header component.
+* Broken floating cards.
 
 ---
 
