@@ -9,7 +9,7 @@
 * **Student Number**: [ST10536982]
 * **Institution**: [ROSEBANK INTERNATIONAL]
 * **Course/Module**: [WEDE5020]
-* **Submission Date**: [17 SEPTEMBER 2026]
+* **Submission Date**: [2 NOVEMBER 2026]
 
 ---
 
@@ -37,7 +37,7 @@ VIMEO is built to help students improve on certain skills pertaining to their st
 - [x] **Milestone 1: Project Initiation & Planning** — Completed [12 August 2026]
 - [x] **Milestone 2: Part 1 Submission** — Completed [14 August 20206]
 - [ ] **Milestone 3: Part 2 Development** — Planned for [18 September 2026]
-- [ ] **Milestone 4: Part 3 Final Testing & Deployment** — Planned for [Date]
+- [ ] **Milestone 4: Part 3 Final Testing & Deployment** — Planned for [2 NOVEMEBR 2026]
 
 ---
 
