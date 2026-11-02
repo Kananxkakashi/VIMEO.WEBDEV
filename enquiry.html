@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial Enquiry | VIMEO</title>
+    <meta name="description" content="Request a tutorial topic or ask VIMEO a question about learning resources.">
+    <link rel="canonical" href="https://www.example.com/enquiry.html">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io; frame-ancestors 'self'; base-uri 'self'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/extras.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header><h1>VIMEO</h1><p>Cum aliis progredi</p></header>
+<nav aria-label="Main"><ul>
+<li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="tutorials.html">Tutorials</a></li>
+<li><a href="upload.html">Upload Tutorial</a></li><li><a href="enquiry.html">Enquiry</a></li><li><a href="contact.html">Contact</a></li>
+</ul></nav>
+<main id="main"><section><h2>Tutorial Enquiry</h2>
+<div class="form-wrap">
+<form action="https://formspree.io/f/your-form-id" method="POST" data-ajax novalidate>
+  <div class="field"><label for="name">Full name</label>
+    <input id="name" name="name" type="text" required minlength="2" maxlength="50" autocomplete="name">
+    <span class="error" aria-live="polite"></span></div>
+  <div class="field"><label for="email">Email</label>
+    <input id="email" name="email" type="email" required autocomplete="email">
+    <span class="error" aria-live="polite"></span></div>
+  <div class="field"><label for="phone">Phone</label>
+    <input id="phone" name="phone" type="tel" required inputmode="tel" placeholder="082 123 4567" autocomplete="tel">
+    <span class="error" aria-live="polite"></span></div>
+  <div class="field"><label for="subject">Subject area</label>
+    <select id="subject" name="subject" required>
+      <option value="">Choose a subject</option><option>Chemistry</option><option>Information Technology</option>
+      <option>Engineering</option><option>Science &amp; Robotics</option><option>Other</option></select>
+    <span class="error" aria-live="polite"></span></div>
+  <div class="field"><label for="date">Date you need it by</label>
+    <input id="date" name="date" type="date" required>
+    <span class="error" aria-live="polite"></span></div>
+  <div class="field"><label for="message">Describe what you need</label>
+    <textarea id="message" name="message" rows="5" required minlength="20" maxlength="500"></textarea>
+    <span class="hint"><span id="count">0</span>/500 characters</span>
+    <span class="error" aria-live="polite"></span></div>
+  <div class="field check"><input id="consent" name="consent" type="checkbox" required>
+    <label for="consent">I agree to be contacted about this enquiry.</label>
+    <span class="error" aria-live="polite"></span></div>
+  <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+  <button type="submit">Send</button>
+  <p class="status" role="status"></p>
+</form></div></section></main>
+<footer><p>&copy; 2026 VIMEO. All Rights Reserved.</p></footer>
+<script src="js/main.js" defer></script><script src="js/forms.js" defer></script></body></html>

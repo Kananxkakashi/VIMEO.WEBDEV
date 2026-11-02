@@ -3,123 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VIMEO</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>VIMEO | Student Tutorials in Chemistry, IT, Engineering &amp; Robotics</title>
+    <meta name="description" content="VIMEO is a student learning platform to discover, create and share practical tutorials in chemistry, IT, engineering and robotics.">
+    <meta name="keywords" content="student tutorials, chemistry, information technology, engineering, robotics, project-based learning">
+    <link rel="canonical" href="https://www.example.com/">
+    <!-- Open Graph / Twitter (off-page sharing) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="VIMEO - Share Knowledge. Build Skills. Learn Together.">
+    <meta property="og:description" content="Student-made tutorials for practical, project-based learning.">
+    <meta property="og:url" content="https://www.example.com/">
+    <meta property="og:image" content="https://www.example.com/images/image2.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Security -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <!-- Speed: preconnect, non-blocking font load -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/extras.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"EducationalOrganization","name":"VIMEO","url":"https://www.example.com/","slogan":"Cum aliis progredi","description":"A student platform for sharing practical tutorials."}
+    </script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 <header>
     <h1>VIMEO</h1>
     <p>Cum aliis progredi</p>
 </header>
-<nav>
+<nav aria-label="Main">
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="tutorials.html">Tutorials</a></li>
         <li><a href="upload.html">Upload Tutorial</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
         <li><a href="contact.html">Contact</a></li>
     </ul>
 </nav>
-<main>
+<main id="main">
     <section>
-    <h2>Find a Tutorial</h2>
-
-    <form>
-        <input type="text"
-               placeholder="Search tutorials...">
-
-        <button type="submit">
-            Search
-        </button>
-    </form>
-</section>
+        <h2>Find a Tutorial</h2>
+        <form id="searchForm" role="search">
+            <input type="search" id="searchInput" placeholder="Search tutorials..." aria-label="Search tutorials" maxlength="80">
+            <button type="submit">Search</button>
+        </form>
+    </section>
     <section class="hero">
         <h2>Share Knowledge. Build Skills. Learn Together.</h2>
-        <p>
-            VIMEO is a dedicated educational platform
-            where students can discover, create and share practical
-            tutorials that help others succeed in academic projects.
-        </p>
+        <p>VIMEO is a dedicated educational platform where students can discover, create and share practical tutorials that help others succeed in academic projects.</p>
         <a href="tutorials.html" class="button">Browse Tutorials</a>
     </section>
     <section>
         <h2>What We Offer</h2>
         <div class="categories">
-            <div class="card">
-                <h3>Chemistry</h3>
-                <p>
-                    Learn how to create solutions, perform experiments,
-                    and understand laboratory procedures.
-                </p>
-            </div>
-            <div class="card">
-                <h3>Information Technology</h3>
-                <p>
-                    Explore programming projects, databases,
-                    networking and software development.
-                </p>
-            </div>
-            <div class="card">
-                <h3>Engineering</h3>
-                <p>
-                    Discover practical engineering projects,
-                    prototypes and design concepts.
-                </p>
-            </div>
-            <div class="card">
-                <h3>Science & Robotics</h3>
-                <p>
-                    Find robotics tutorials, STEM projects
-                    and scientific investigations.
-                </p>
-            </div>
+            <div class="card"><h3>Chemistry</h3><p>Learn how to create solutions, perform experiments, and understand laboratory procedures.</p></div>
+            <div class="card"><h3>Information Technology</h3><p>Explore programming projects, databases, networking and software development.</p></div>
+            <div class="card"><h3>Engineering</h3><p>Discover practical engineering projects, prototypes and design concepts.</p></div>
+            <div class="card"><h3>Science &amp; Robotics</h3><p>Find robotics tutorials, STEM projects and scientific investigations.</p></div>
         </div>
     </section>
+
+    <!-- NEW: dynamic listing with search, filter, sort -->
+    <section id="tutorials">
+        <h2>Latest Tutorials</h2>
+        <div class="toolbar">
+            <input type="search" id="localSearch" placeholder="Filter by title, author or topic" aria-label="Filter tutorials" maxlength="80">
+            <select id="subjectFilter" aria-label="Filter by subject"><option value="all">All subjects</option></select>
+            <select id="sortSelect" aria-label="Sort tutorials">
+                <option value="newest">Newest first</option>
+                <option value="oldest">Oldest first</option>
+                <option value="az">Title A-Z</option>
+            </select>
+        </div>
+        <p id="resultCount" class="meta" role="status" aria-live="polite"></p>
+        <div id="tutorialList" class="categories"></div>
+        <button id="loadMore" type="button" hidden>Load more</button>
+    </section>
+
+    <!-- NEW: gallery with lightbox (replaces static Featured Learning Areas cards) -->
     <section>
-
-    <h2>Featured Learning Areas</h2>
-
-    <div class="categories">
-
-        <div class="card">
-            <img src="images/image2.jpg" alt="Engineering">
-
-            <h3>Engineering</h3>
-
-            <p>
-                Explore design, construction,
-                and prototype development.
-            </p>
+        <h2>Featured Learning Areas</h2>
+        <div class="gallery">
+            <button type="button" aria-label="Open Engineering image"><img src="images/image2.jpg" alt="Engineering: design, construction and prototype development" width="400" height="200" loading="lazy"></button>
+            <button type="button" aria-label="Open Robotics image"><img src="images/image3.jpg" alt="Robotics: automation, sensors and robotic systems" width="400" height="200" loading="lazy"></button>
+            <button type="button" aria-label="Open Classroom image"><img src="images/image4.jpg" alt="Collaborative learning: connect with students and share knowledge" width="400" height="200" loading="lazy"></button>
         </div>
+    </section>
 
-        <div class="card">
-            <img src="images/image3.jpg" alt="Robotics">
-
-            <h3>Robotics</h3>
-
-            <p>
-                Learn automation, sensors,
-                and robotic systems.
-            </p>
-        </div>
-
-        <div class="card">
-            <img src="images/image4.jpg" alt="Classroom">
-
-            <h3>Collaborative Learning</h3>
-
-            <p>
-                Connect with students and
-                share practical knowledge.
-            </p>
-        </div>
-
-    </div>
-
-</section>
     <section>
         <h2>Our Goals</h2>
         <ul>
@@ -131,71 +104,40 @@
         </ul>
     </section>
     <section>
-    <h2>Platform Impact</h2>
-
-    <div class="categories">
-
-        <div class="card">
-            <h3>250+</h3>
-            <p>Tutorials Shared</p>
+        <h2>Platform Impact</h2>
+        <div class="categories">
+            <div class="card"><h3>250+</h3><p>Tutorials Shared</p></div>
+            <div class="card"><h3>120+</h3><p>Student Contributors</p></div>
+            <div class="card"><h3>15+</h3><p>Academic Subjects</p></div>
+            <div class="card"><h3>5,000+</h3><p>Monthly Views</p></div>
         </div>
-
-        <div class="card">
-            <h3>120+</h3>
-            <p>Student Contributors</p>
+    </section>
+    <section>
+        <h2>Featured Student Contributors</h2>
+        <div class="categories">
+            <div class="card"><h3>Yak B.</h3><p>Chemistry Specialist</p></div>
+            <div class="card"><h3>Blessing M.</h3><p>Software Development</p></div>
+            <div class="card"><h3>Kanan K.</h3><p>Engineering Projects</p></div>
         </div>
-
-        <div class="card">
-            <h3>15+</h3>
-            <p>Academic Subjects</p>
+    </section>
+    <section class="showcase">
+        <div class="showcase-content">
+            <h2>Built For Practical Learning</h2>
+            <p>From engineering prototypes to robotics projects, VIMEO helps students learn through doing.</p>
         </div>
-
-        <div class="card">
-            <h3>5,000+</h3>
-            <p>Monthly Views</p>
-        </div>
-
-    </div>
-</section>
-<section>
-    <h2>Featured Student Contributors</h2>
-
-    <div class="categories">
-
-        <div class="card">
-            <h3>Yak B.</h3>
-            <p>Chemistry Specialist</p>
-        </div>
-
-        <div class="card">
-            <h3>Blessing M.</h3>
-            <p>Software Development</p>
-        </div>
-
-        <div class="card">
-            <h3>Kanan K.</h3>
-            <p>Engineering Projects</p>
-        </div>
-
-    </div>
-</section>
-<section class="showcase">
-
-    <div class="showcase-content">
-
-        <h2>Built For Practical Learning</h2>
-
-        <p>
-            From engineering prototypes to robotics projects,
-            VIMEO helps students learn through doing.
-        </p>
-
-    </div>
-
-</section>
+    </section>
 </main>
 <footer>
     <p>&copy; 2026 VIMEO. All Rights Reserved.</p>
 </footer>
+
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" aria-hidden="true">
+    <button class="lb-close" type="button" aria-label="Close">&times;</button>
+    <button class="lb-prev" type="button" aria-label="Previous image">&#8249;</button>
+    <img src="" alt="">
+    <p></p>
+    <button class="lb-next" type="button" aria-label="Next image">&#8250;</button>
+</div>
+<script src="js/main.js" defer></script>
 </body>
 </html>

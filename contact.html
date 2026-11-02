@@ -3,117 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | VIMEO</title>
+    <title>Contact Us | VIMEO</title>
+    <meta name="description" content="Get in touch with the VIMEO team about tutorials, feedback or support.">
+    <link rel="canonical" href="https://www.example.com/contact.html">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' https://fonts.googleapis.com https://cdn.jsdelivr.net; style-src-attr 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self' data: https://tile.openstreetmap.org; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io; frame-ancestors 'self'; base-uri 'self'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/extras.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-    <h1>VIMEO</h1>
-    <p>Cum aliis progredi</p>
-</header>
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="tutorials.html">Tutorials</a></li>
-        <li><a href="upload.html">Upload Tutorial</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
-<main>
-    <section class="hero">
-        <h2>Contact Us</h2>
-        <p>
-            Have a question, suggestion, or issue? We'd love to hear from you.
-            Reach out to the VIMEO team using the information
-            below or complete the contact form.
-        </p>
-    </section>
-    <section>
-        <h2>Contact Information</h2>
-        <div class="categories">
-            <div class="card">
-                <h3>Email</h3>
-                <p>support@vimeo.co.za</p>
-            </div>
-            <div class="card">
-                <h3>Phone</h3>
-                <p>+27 11 555 1234</p>
-            </div>
-            <div class="card">
-                <h3>Location</h3>
-                <p>Nelspruit, South Africa</p>
-            </div>
-            <div class="card">
-                <h3>Support Hours</h3>
-                <p>Monday - Friday<br>08:00 - 17:00</p>
-            </div>
-        </div>
-    </section>
-    <section>
-        <h2>Send Us a Message</h2>
-        <form action="#" method="post">
-            <label for="name">Full Name</label>
-            <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Enter your full name"
-                required>
-            <label for="email">Email Address</label>
-            <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Enter your email address"
-                required>
-            <label for="subject">Subject</label>
-            <input
-                type="text"
-                id="subject"
-                name="subject"
-                placeholder="Enter message subject"
-                required>
-            <label for="message">Message</label>
-            <textarea
-                id="message"
-                name="message"
-                rows="6"
-                placeholder="Type your message here..."
-                required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-    <section>
-        <h2>Frequently Asked Questions</h2>
-        <article>
-            <h3>Who can upload tutorials?</h3>
-            <p>
-                Any student may submit educational tutorials related to
-                academic subjects and practical projects.
-            </p>
-        </article>
-        <article>
-            <h3>Can I upload videos?</h3>
-            <p>
-                Yes. Student Practical Hub is designed to support tutorial
-                videos, images, and written guides.
-            </p>
-        </article>
-        <article>
-            <h3>Is the platform free?</h3>
-            <p>
-                Yes. The platform is intended to provide students with free
-                access to educational resources and practical learning content.
-            </p>
-        </article>
-    </section>
+<a class="skip-link" href="#main">Skip to content</a>
+<header><h1>VIMEO</h1><p>Cum aliis progredi</p></header>
+<nav aria-label="Main"><ul>
+<li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="tutorials.html">Tutorials</a></li>
+<li><a href="upload.html">Upload Tutorial</a></li><li><a href="enquiry.html">Enquiry</a></li><li><a href="contact.html">Contact</a></li>
+</ul></nav>
+<main id="main"><section><h2>Contact Us</h2>
+<div class="form-wrap">
+<!-- Replace the action URL with your own endpoint (e.g. Formspree) -->
+<form action="https://formspree.io/f/your-form-id" method="POST" data-ajax novalidate>
+  <div class="field"><label for="name">Full name</label>
+    <input id="name" name="name" type="text" required minlength="2" maxlength="50" autocomplete="name">
+    <span class="error" aria-live="polite"></span></div>
+  <div class="field"><label for="email">Email</label>
+    <input id="email" name="email" type="email" required autocomplete="email">
+    <span class="error" aria-live="polite"></span></div>
+  <div class="field"><label for="phone">Phone (optional)</label>
+    <input id="phone" name="phone" type="tel" inputmode="tel" placeholder="082 123 4567" autocomplete="tel">
+    <span class="error" aria-live="polite"></span></div>
+  <div class="field"><label for="topic">Topic</label>
+    <select id="topic" name="topic" required>
+      <option value="">Choose a topic</option><option>General question</option><option>Report a problem</option>
+      <option>Feedback</option><option>Partnership</option></select>
+    <span class="error" aria-live="polite"></span></div>
+  <div class="field"><label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" required minlength="20" maxlength="500"></textarea>
+    <span class="hint"><span id="count">0</span>/500 characters</span>
+    <span class="error" aria-live="polite"></span></div>
+  <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+  <button type="submit">Send</button>
+  <p class="status" role="status"></p>
+</form></div></section>
+<section><h2>Find Us</h2><div id="map" role="img" aria-label="Map showing our location"></div></section>
 </main>
-<footer>
-    <p>&copy; 2026 VIMEO. All Rights Reserved.</p>
-</footer>
-</body>
-</html>
+<footer><p>&copy; 2026 VIMEO. All Rights Reserved.</p></footer>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@9.2.4/ol.css">
+<script src="https://cdn.jsdelivr.net/npm/ol@9.2.4/dist/ol.js" defer></script>
+<script src="js/main.js" defer></script><script src="js/forms.js" defer></script></body></html>
